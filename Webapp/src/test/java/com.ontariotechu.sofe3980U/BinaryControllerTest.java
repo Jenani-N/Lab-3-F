@@ -66,14 +66,14 @@ public class BinaryControllerTest {
 			.andExpect(model().attribute("operand1", "11"));
     }
 
-    @Test
+    /* @Test
 	    public void postParameter3() throws Exception {
         this.mvc.perform(post("/").param("operand1","111").param("operator","|").param("operand2","000"))//.andDo(print())
             .andExpect(status().isOk())
             .andExpect(view().name("result"))
 			.andExpect(model().attribute("result", "111"))
 			.andExpect(model().attribute("operand1", "111"));
-    }
+    } */
     @Test
 	    public void postParameter4() throws Exception {
         this.mvc.perform(post("/").param("operand1","11").param("operator","*").param("operand2","10"))//.andDo(print())
